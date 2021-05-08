@@ -1,1 +1,1 @@
-# codility-python
+### Codility training solutions via python
