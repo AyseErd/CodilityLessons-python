@@ -1,0 +1,7 @@
+# Check problem description on https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+
+def solution(A, K):
+    if K and len(A) in range(1, 101):
+        if all(ele in range(-1000, 1001) for ele in A):
+            A[:] = A[-(K % len(A)):len(A)] + A[:-(K % len(A))]
+    return A
